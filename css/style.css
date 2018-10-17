@@ -255,7 +255,12 @@ a:hover, a:active, a:focus {
   background-size: cover !important;
 }
 
-
+.parallax-section:after{
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
+          transform: translateX(-50%) translateY(-50%) scale(0.7);
+  opacity: 1;
+}
 
 
 /*---------------------------------------
@@ -476,6 +481,9 @@ a:hover, a:active, a:focus {
   margin: auto;
   background-color: white;
 }
+#project{
+  animation-duration: 2s;
+}
 .col-6{
   float: left;
   margin-top: 60px;
@@ -508,6 +516,29 @@ a:hover, a:active, a:focus {
   transition: 1s opacity;
 }
 
+.back-to-top {
+  background-image: url("img/top.jpg");
+  position: fixed;
+  display: none;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index:1000;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  outline: none;
+}
+
 
 /*---------------------------------------
   ABOUT
@@ -527,6 +558,22 @@ a:hover, a:active, a:focus {
 }
 .func{
   padding-top: 15px;
+  animation-duration: 3s;
+   animation-delay: 3s;
+}
+#delivery1{
+  padding-top: 150px;
+
+}
+.splash {
+  transition: all 2s ease-out;
+}
+
+#delivery1 h1{
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
 }
 .func p{
   color: rgb(230,184,0);
@@ -608,8 +655,11 @@ a:hover, a:active, a:focus {
   margin-top: 23px;
 }
 #storage1 h1{
-  color: white;
+  text-align: center;
   font-size: 32px;
+  color: white;
+  margin-top: 100px;
+  font-weight: bold;
 }
 #storage1 h2{
   font-size: 26px;
@@ -675,6 +725,16 @@ transform: rotateZ(360deg);
   height: 250px;
   width: 100%;
 }
+#oa{
+  padding-top: 200px;
+}
+
+#oa h1{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
 #aboutus p{
   line-height: 2.2;
   margin-top: 20px;
@@ -706,6 +766,14 @@ transform: rotateZ(360deg);
   height:110px;
   float:left;
   padding-top: 25px;
+}
+
+#storage2 h1{
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  margin-top: 100px;
+  font-weight: bold;
 }
 .trans:hover{
   transform: rotateY(180deg);
@@ -782,114 +850,6 @@ transform: rotateZ(360deg);
   opacity: 1;
 }
 
-
-/*---------------------------------------
-   TEAM
------------------------------------------*/
-
-#team .item {
-  display: block;
-  width: 100%;
-  margin-bottom: 22px;
-}
-
-#team h3,
-#team p {
-  margin: 0;
-}
-
-.team-item {
-  overflow: hidden;
-  position: relative;
-  margin-top: 34px;
-  margin-bottom: 16px;
-}
-
-.team-item img {
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-.team-item:hover img {
-  transform: scale(1.1);
-}
-
-.team-overlay {
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-.team-overlay .social-icon {
-  position: relative;
-  top: 45%;
-}
-.team-overlay .social-icon li a {
-  background: #ffffff;
-  color: #191919;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
-
-.team-item:hover .team-overlay {
-  opacity: 1;
-}
-
-
-/*---------------------------------------
-  CONTACT
------------------------------------------*/
-
-
-
-#contact-form {
-  padding-top: 22px;
-}
-
-#contact .text-success,
-#contact .text-danger {
-  display: none;
-  padding: 0 0 5px 20px;
-}
-
-#contact .form-control {
-  border: none;
-  box-shadow: none;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 22px;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-#contact .form-control:focus {
-  border-color: #d9d9d9;
-}
-
-#contact input {
-  height: 55px;
-  line-height: 45px;
-}
-
-#contact .section-btn {
-  margin: 5px 0 0 0;
-}
-
-#contact button#cf-submit {
-  background: transparent;
-  border: none;
-  padding: 0;
-  line-height: 50px;
-}
 
 
 /*---------------------------------------

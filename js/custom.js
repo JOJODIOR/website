@@ -8,7 +8,7 @@
         });
 
 
-    
+
         $('.navbar-collapse a').on('click',function(){
           $(".navbar-collapse").collapse('hide');
         });
@@ -21,6 +21,18 @@
               }
         });
 
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 50) {
+            $('.back-to-top').fadeIn('slow');
+          } else {
+            $('.back-to-top').fadeOut('slow');
+          }
+        });
+
+        $('.back-to-top').click(function(){
+          $('html, body').animate({scrollTop : 0},800);
+          return false;
+        });
 
         // PARALLAX JS
         function initParallax() {
