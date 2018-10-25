@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/animate.min.css">
 
 <link rel="stylesheet" href="css/owl.theme.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
@@ -29,6 +30,7 @@
           <span class="sk-inner-circle"></span>
      </div>
 </div>
+<div class="loader"></div>
 
 
 <!-- MENU -->
@@ -50,24 +52,25 @@
           <!-- MENU LINKS -->
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="smoothScroll">主页</a></li>
+                    <li><a href="index.html" class="smoothScroll">主页</a></li>
                     <li><a href="about.html" class="smoothScroll">关于我们</a></li>
                     <li>
                       <div class="has-dropdown">
-                      <a href="#">产品介绍</a>
+                      <a href="#about" class="smoothScroll">产品介绍</a>
                       <div class="dropdown">
                         <a href="transport.html">数据交通智能安防系统</a>
                         <a href="delivery.html">数据物流智能安防系统</a>
                         <a href="storage.html">数据仓储智能安防系统</a>
                         <a href="office.html">数据办公智能安防系统</a>
                         <a href="#">数据会展智能安防系统</a>
+                        <a href="hardware.html">硬件产品</a>
 
 
                       </div>
                     </div>
                     </li>
 
-                    <li><a href="#team" class="smoothScroll">前沿资讯</a></li>
+                    <li><a href="#" class="smoothScroll">前沿资讯</a></li>
                     <li><a href="contact.html" class="smoothScroll">联系我们</a></li>
                </ul>
           </div>
@@ -105,27 +108,82 @@
 
 <!-- ABOUT -->
 <section id="about" class="parallax-section">
-     <div class="container">
+     <!-- <div class="container">
        <div class="row">
-         <h1><img src="img/font.png"/ style="width:500px;"></h1>
-        <div class="col-4">
+         <h1><img src="img/font.png" class="wow fadeInUp"style="width:500px;"></h1>
+        <div class="col-4 wow fadeInUp" data-wow-delay=0.3s >
           <h2>为安保工作减负<br>为安保企业插上科技的翅膀<br>提升安保企业的科技含量</h2><br>
           <h3>诚信，品质，简单，勤奋，公平，真诚</h3></div>
          <div class="col-6">
-           <img src="img/index_1.png" style="height:700px;"/></div>
+           <img src="img/index_1.png" class="wow fadeIn" style="height:700px;animation-duration:3s"/></div>
 
         </div>
-        </div>
+        </div> -->
+
+        <div class="cont">
+  <div class="mouse"></div>
+  <div class="app">
+    <div class="app__bgimg">
+      <div class="app__bgimg-image app__bgimg-image--1"> </div>
+      <div class="app__bgimg-image app__bgimg-image--2"> </div>
+    </div>
+    <div class="app__img"> <img onmousedown="return false" src="img/whiteTest4.png" alt="city" /> </div>
+    <div class="app__text app__text--1">
+      <div class="app__text-line app__text-line--4"><a href="#" class="cd-modal-trigger">软件系统</a></div>
+      <div class="app__text-line app__text-line--1">由浙江安邦科技公司自主研发的软件系统，涵盖交通，物流，仓储，会展，办公等方面。</div>
+
+    </div>
+    <div class="app__text app__text--2">
+      <div class="app__text-line app__text-line--4"><a href="hardware.html">硬件产品</a></div>
+      <div class="app__text-line app__text-line--1">由浙江安邦科技公司自主研发的硬件产品，包括车载主机，高清摄像头，等安防设备。</div>
+
+    </div>
+  </div>
+  <div class="pages">
+    <ul class='pages__list'>
+      <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+      <li data-target='2' class='pages__item pages__item--2'></li>
+
+
+    </ul>
+  </div>
+</div>
 
 </section>
 
 
+<div class="cd-modal">
+	<div class="modal-content">
+		<h1>软件系统产品</h1>
+		<a href="transport.html" style="text-align:center;color:#757575;"><h2>数据交通智能安防系统</h2></a>
+    <div style="text-align:center"><a href="transport.html"><img src="img/index-1.jpg" style="width: 900px;"></a></div>
+    <p>数据交通智能安防系统目前包括金融押运交通管理系统和列车车载监控系统，涵盖安邦科技公司自主研发的车载系统，系统通过车辆实时监控、车辆定位监控、自动提醒、主动报警等高科技技术手段实现全方位管控。
+    </p>
+    <a href="delivery.html" style="text-align:center;color:#757575;"><h2>数据物流智能安防系统</h2></a>
+    <div style="text-align:center"><a href="delivery.html"><img src="img/index-2.png" style="width: 900px;"></a></div>
+    <p>数据物流智能安防系统包括银行交接系统，公检法一体化交接系统，通过生物识别和加密传输，对车辆、人员、款箱等资源进行合理调度分配，实时监控交接流程，实现科学业务交接流程。
+    </p>
+    <a href ="storage.html" style="text-align:center;color:#757575;"><h2>数据仓储智能安防系统</h2></a>
+      <div style="text-align:center"><a href="storage.html"><img src="img/index-3.png" style="width: 900px;"></a></div>
+    <p>数据仓储智能安防系统包括涉案财物管理系统和档案保管系统，构建了一套更科学，更先进的流程化保管管理平台。</p>
+    <a href="office.html" style="text-align:center; color:#757575;"><h2>数据办公智能安防系统</h2></a>
+    <div style="text-align:center"><a href="office.html"><img src="img/index-4.png" style="width: 900px;height:300px;"></a></div>
+    <p>办公OA管理系统是以提升企业管理效率与组织产能为目标的一套业务运营平台，系统以战略能力、协作关系、组织知识、企业文化等无形资产和能力为核心管理要素，通过统一平台帮助企业员工做对事、做快事、做好事、乐做事。
+		</p>
 
+
+	</div> <!-- .modal-content -->
+
+	<a href="#about" class="modal-close">Close</a>
+</div> <!-- .cd-modal -->
+<div class="cd-transition-layer">
+	<div class="bg-layer"></div>
+</div> <!-- .cd-transition-layer -->
 
 
 
 <!-- FOOTER -->
-<footer>
+<footer class="wow fadeInUpBig">
      <div class="container">
           <div class="row">
 
@@ -140,9 +198,8 @@
                <div class="col-md-4 col-sm-6">
                     <div class="footer-info">
                      <h2>联系我们</h2>
-                         <p><a href="tel:010-090-0780">0571-86881683</a></p>
-                         <p><a href="mailto:info@company.com">info@company.com</a></p>
-                         <p><a href="#">杭州市西湖区转塘之江财富中心E7幢</a></p>
+                     <p><a href="tel:0571-86881683">0571-86881683</a></p>
+                     <p><a href="#">杭州市西湖区转塘之江财富中心E7幢</a></p>
                     </div>
                </div>
 
@@ -178,6 +235,8 @@
 <script src="js/modernizr.custom.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/wow.min.js"></script>
+
 
 </body>
 </html>

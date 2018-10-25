@@ -26,11 +26,11 @@
 <body>
 
 <!-- PRE LOADER -->
-<div class="preloader">
+<!-- <div class="preloader">
      <div class="spinner">
           <span class="sk-inner-circle"></span>
      </div>
-</div>
+</div> -->
 
 <!-- MENU -->
 <div class="navbar navbar-nav navbar-fixed-top header-banner" role="navigation">
@@ -61,6 +61,8 @@
                         <a href="storage.html">数据仓储智能安防系统</a>
                         <a href="office.html">数据办公智能安防系统</a>
                         <a href="#">数据会展智能安防系统</a>
+                        <a href="hardware.html">硬件产品</a>
+
 
 
 
@@ -91,7 +93,7 @@
                   </a>
              </div>
              <ul class="section-btn1">
-                    <a href="#delivery1" class="smoothScroll"><span data-hover="智能交接系统">智能交接系统</span></a>
+                    <a href="#delivery1" class="smoothScroll"><span data-hover="智慧银行交接系统">智慧银行交接系统</span></a>
                </ul>
 
         </div>
@@ -103,26 +105,47 @@
     </section>
 
     <section id="delivery1" class="parallax-section">
-      <div class="container animated once bounceInLeft delay-100s">
+      <div class="container">
         <div class="row">
           <div class="banner">
-          <h1>智能交接系统</h1></div>
-          <p>智慧银行交接系统是通过提升“技防”和“客户服务”打造联通设备、工作人员和客户三方的多功能系统平台，在提高安防水平的同时，更极大程度上提升客户体验。运用RFID等物联网技术，实现款箱的自动清点，自动核对。</p>
+          <h1>智慧银行交接系统</h1></div>
+          <div class="banner1 wow fadeInLeft" id="banner1" style="margin: 50px auto;">
+            <div class="banner-view"></div>
+            <div class="banner-btn"></div>
+            <div class="banner-number"></div>
+            <div class="banner-progres"></div>
+          </div>
+          <p class="wow bounceInRight" style="animation-duration:2s;">智慧银行交接系统是通过提升“技防”和“客户服务”打造联通设备、工作人员和客户三方的多功能系统平台，在提高安防水平的同时，更极大程度上提升客户体验。运用RFID等物联网技术，实现款箱的自动清点，自动核对。</p>
           <div class="arrow" style="font-size:20px;text-align:left">
               <img src="img/arrow.png" class="img_arr" style="height:50px"/>
               系统流程</div>
               <div class="func" style="vertical-align:middle;">
-            <p>早送业务</p> <img src="img/save1.png" style="height:200px;">
-            <p>晚接业务</p><br><img src="img/save2.png" style="height:160px;">
-
+            <p>早送业务</p> <img src="img/save1.png" class="wow bounceInLeft"style="height:200px;animation-duration:2s;">
+            <p>晚接业务</p><br><img src="img/save2.png" class="wow bounceInLeft" style="height:160px;animation-duration:2s;">
+          </div>
             <div class="arrow" style="font-size:20px;text-align:left">
                 <img src="img/arrow.png" class="img_arr" style="height:50px"/>
                 系统功能</div>
-                <div class="col-5">
-                <img src="img/save3.png" style="height:500px;"></div>
+            <div class="shutter wow fadeInUpBig" style="animation-duration:2s;">
+            <div class="shutter-img">
+              <a href="#" data-shutter-title="实时定位"><img src="img/delivery1.png" alt="#"></a>
+              <a href="#" data-shutter-title="出入库扫码"><img src="img/delivery2.png" alt="#"></a>
+              <a href="#" data-shutter-title="人脸识别"><img src="img/save4.png" alt="#"></a>
+            </div>
+            <ul class="shutter-btn">
+              <li class="prev"></li>
+              <li class="next"></li>
+            </ul>
+            <div class="shutter-desc">
+              <p> </p>
+            </div>
+            </div>
+
+                <!-- <div class="col-5">
+                <img src="img/save3.png" class="wow bounceInRight" style="height:500px; animation-duration:2s; "data-wow-delay=0.8s></div>
                 <div class="col-3">
-                  <img src="img/save4.png" style="height:300px;"></div>
-          </div>
+                  <img src="img/save4.png" class="wow zoomIn"style="height:300px;animation-duration:2s;"data-wow-delay=0.8s></div> -->
+          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -143,9 +166,8 @@
                <div class="col-md-4 col-sm-6">
                     <div class="footer-info">
                      <h2>联系我们</h2>
-                         <p><a href="tel:010-090-0780">0571-86881683</a></p>
-                         <p><a href="mailto:info@company.com">info@company.com</a></p>
-                         <p><a href="#">杭州市西湖区转塘之江财富中心E7幢</a></p>
+                     <p><a href="tel:0571-86881683">0571-86881683</a></p>
+                     <p><a href="#">杭州市西湖区转塘之江财富中心E7幢</a></p>
                     </div>
                </div>
                <div class="col-md-3 col-sm-12">
@@ -169,20 +191,59 @@
 </footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-
 <!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<script src="js/modernizr.custom.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/scroll.js"></script>
-<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
+<script src="js/shutter.js"></script>
+<script src="js/velocity.js"></script>
+<script>
+$(function () {
+  $('.shutter').shutter({
+	shutterW: 1000, // 容器宽度
+	shutterH: 550, // 容器高度
+	isAutoPlay: true, // 是否自动播放
+	playInterval: 900, // 自动播放时间
+	curDisplay: 1, // 当前显示页
+	fullPage: false // 是否全屏展示
+  });
+});
+</script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript">
+
+	var banner = new FragmentBanner({
+		container : "#banner1",//选择容器 必选
+		imgs : ['img/save5.jpg','img/save6.jpg','img/save7.jpg','img/save8.jpg'],//图片集合 必选
+		size : {
+			width : 1150,
+			height : 660
+		},//容器的大小 可选
+		//行数与列数 可选
+		grid : {
+			line : 12,
+			list : 14
+		},
+		index: 0,//图片集合的索引位置 可选
+		type : 2,//切换类型 1 ， 2 可选
+		boxTime : 2000,//小方块来回运动的时长 可选
+		fnTime : 4000,//banner切换的时长 可选
+	});
+
+	/*
+	** 只填两个必要参数也是可以的
+	*/
+
+
+</script>
+
+
+
+
 
 </body>
 </html>
