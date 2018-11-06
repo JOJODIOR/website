@@ -1,4 +1,4 @@
-
+img
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700');
 
 body {
@@ -10,6 +10,8 @@ body {
 html, body {
   width: 100%;
   height: 100%;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
 }
 
 .cont {
@@ -19,7 +21,7 @@ html, body {
   align-items: center;
   height: 100vh;
   /* background-color: rgb(117,117,117,0.4); */
-  background-image: linear-gradient(to left bottom, #BFB5A1 0%, #757575 100%);
+  /* background-image: linear-gradient(to left bottom, #BFB5A1 0%, #757575 100%); */
   overflow: hidden;
 }
 
@@ -107,10 +109,15 @@ html, body {
   font-weight: 700;
   color: #0A101D;
 }
-.app a:hover{
+.app__text-line--4 a:hover{
   outline:none;
   color: rgb(230, 184, 0,0.7);
   text-decoration: none;
+  transition-duration: 0.6s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transform: scale3d(1.08, 1.08, 2);
+  -webkit-transform: scale3d(1.08, 1.08, 2);
 }
 .app__text-line--3 {
   font-size: 40px;
@@ -318,7 +325,7 @@ html, body {
   min-width: 50px;
   height: 80px;
   border-radius: 30px;
-  border: 5px solid rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(0, 0, 0, 0.8);
 }
 .mouse:after {
   content: '';
@@ -330,7 +337,7 @@ html, body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: black;
   -webkit-animation: scroll 1s infinite alternate;
           animation: scroll 1s infinite alternate;
 }
@@ -358,7 +365,7 @@ html, body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid black;
   cursor: pointer;
 }
 .pages__item:after {
@@ -371,7 +378,7 @@ html, body {
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: black;
   opacity: 0;
   transition: 500ms;
 }
@@ -426,6 +433,7 @@ p {
   line-height: 29px;
   letter-spacing: 0.5px;
 }
+-------------------------------- */
 
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*---------------------------------------
@@ -597,6 +605,7 @@ a {
 a:hover, a:active, a:focus {
   color: #000000;
   outline: none;
+  text-decoration: none;
 }
 
 * {
@@ -695,6 +704,8 @@ a:hover, a:active, a:focus {
   margin-bottom: 0;
   background-color: #0052cc;
   padding: 20px 0;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
 }
 
 .custom-navbar .navbar-brand {
@@ -735,6 +746,8 @@ a:hover, a:active, a:focus {
 
 .navbar-nav{
   margin-top: 20px;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
 }
 
 .custom-navbar .navbar-nav li a:hover:after,
@@ -818,19 +831,141 @@ a:hover, a:active, a:focus {
   font-size: 26px;
 }
 
-#ups{
-  padding-top: 150px;
+#news{
+  padding-top: 200px;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
 
 }
 
-#ups h1{
+#news h1{
+  font-size: 50px;
+  padding-top: 40px;
+  font-weight: bold;
+  color:rgb(230, 184, 0);
+}
+#news  .new p{
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  font-size: 22px;
+  padding-top: 40px;
+}
+
+#news .blog-content figure {
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+  width: 100%;
+}
+
+#news li{
+  list-style: none;
+
+}
+#news .blog-content figure .post-date {
+	text-align: center;
+	color: #FFF;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	display: block;
+	background-color: rgb(230, 184, 0,0.7);
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 41px;
+	z-index: 50
+}
+#news .blog-content figure .post-date span {
+	font-size: 50px;
+	line-height: 35px;
+	display: block
+}
+#news .blog-content article{
+  width: 520px;
+	font-size: 21px;
+	line-height: 30px;
+	color: black;
+	font-weight: 800;
+	color: #343434;
+	padding-left: 22px;
+	padding-top: 15px;
+	padding-bottom: 21px;
+}
+.blog-content h2{
+  color: black;
+  font-weight: 800;
+}
+
+.blog-content a:link, a:hover, a:active{
+  text-decoration: none;
+
+}
+#news .blog-content:hover figure img {
+	opacity: 0.5;
+  -webkit-transform: scale3d(1.08, 1.08, 2);
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+  transition-property: all;
+  transition-timing-function: ease;
+	transform: scale3d(1.08, 1.08, 2);
+}
+
+.blog-content article:hover{
+  background-color:rgb(230, 184, 0,0.7);
+}
+.blog-content h2:hover{
+  color:white;
+  transition-duration: 0.6s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transform: scale3d(1.08, 1.08, 2);
+  -webkit-transform: scale3d(1.08, 1.08, 2);
+}
+
+#african{
+  padding-top: 200px;
+}
+#african h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+#african p{
+  padding-top: 20px;
+}
+
+#exhibition{
+  padding-top: 200px;
+}
+#exhibition h1{
   text-align:center;
   font-size: 30px;
+  color: white;
   font-weight: bold;
 }
+#exhibition li{
+  list-style: none;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  color:#757575;
+  padding-left: 60px;
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 20px;
+  animation-duration: 1s;
+}
 
-
-
+#exhibition li:hover{
+  color:rgb(230, 184, 0,0.7);
+  transition-duration: 0.6s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transform: scale3d(1.08, 1.08, 2);
+  -webkit-transform: scale3d(1.08, 1.08, 2);
+}
 /*---------------------------------------
   HOME
 -----------------------------------------*/
@@ -897,12 +1032,39 @@ a:hover, a:active, a:focus {
   margin-top: 50px;
 }
 .col-5{
-  float: left;;
+  float: left;
   width: 60%;
 }
 .col-3{
-  float: right;
+  float:right;
   width:40%;
+  /* position: absolute;
+  display: block; */
+
+}
+#d{
+
+  position: absolute;
+  display: block;
+
+}
+
+.col-3 h2{
+  text-align: center;
+  font-weight: 700;
+  width: 300px;
+  color: white;
+  margin-left: 70px;
+  border: solid;
+  border-color: rgb(230, 184, 0,0.8);
+  background-color: rgb(230, 184, 0,0.7);
+}
+.col-3 h2:hover{
+  background-color: transparent;
+  color:Black;
+  transition-duration: 0.6s;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 .col-3 p{
   margin-top: 20px;
@@ -947,7 +1109,15 @@ a:hover, a:active, a:focus {
   background-size: cover;
   transition: 1s opacity;
 }
+#phone{
+  padding-top: 150px;
+}
 
+#phone h1{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
 .back-to-top {
   background-image: url("img/top.jpg");
   position: fixed;
@@ -1294,6 +1464,21 @@ Slider Navigation
     background: url(../img/ink-separation.svg) no-repeat center center;
     margin: .2em auto 0;
   }
+
+  .cd-modal h2{
+    font-size:26px;
+    font-weight: 400;
+  }
+
+  .cd-modal h2:hover{
+    color:black;
+    font-weight: bold;
+    transition-duration: 0.6s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transform: scale3d(1.08, 1.08, 2);
+    -webkit-transform: scale3d(1.08, 1.08, 2);
+  }
   .cd-modal p {
     line-height: 1.6;
     margin: 2em auto;
@@ -1507,6 +1692,9 @@ Slider Navigation
 .func{
   padding-top: 15px;
   animation-duration: 3s;
+  font-size: 16px;
+  color:rgb(230, 184, 0);
+  font-weight: 500;
    /* animation-delay: 3s; */
 }
 #delivery1{
@@ -1664,14 +1852,15 @@ Slider Navigation
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 36px;
+  height: 45px;
   background: url(../img/shutter_shadow.png) repeat;
 }
 .shutter-desc p {
   padding-left: 20px;
   line-height: 36px;
   color: #fff;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 22px;
 }
 .func p{
   color: rgb(230,184,0);
@@ -1867,6 +2056,19 @@ s  margin-top: 50px;
   padding-top: 25px;
 }
 
+.ex_img{
+  height:80px;
+  padding-left:40px;
+  padding-right:40px;
+}
+
+.ex_img:hover{
+  transform: rotateY(360deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
 #storage2 h1{
   text-align: center;
   font-size: 32px;
@@ -1875,10 +2077,9 @@ s  margin-top: 50px;
   font-weight: bold;
 }
 .trans:hover{
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
   transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 #trnasport2 li{

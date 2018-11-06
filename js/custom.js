@@ -234,4 +234,16 @@
 		resize = false;
 	}
 
+  $(window).scroll(function() {
+    var oDiv = document.getElementById("d");
+    var toTop = document.documentElement.scrollTop||document.body.scrollTop;
+    if ($(".col-3").offset().top >350) {
+      oDiv.style.top=document.body.scrollTop+500;  //控制上下位置
+      oDiv.style.left = document.body.scrollLeft +900; //控制横向位置
+    }if(toTop<=200){
+      $(".col-3").hide();
+    }else{
+      $(".col-3").show();
+    }
+  });
 })(jQuery);
